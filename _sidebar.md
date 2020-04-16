@@ -1,4 +1,8 @@
 - [**Getting started**](/)
 
-  - [First Steps](first_steps.md)
-  - [Setting Up Environment](setting_environments.md)
+  - [Getting started](getting_started.md)
+  - [Organizatiom](organization.md)
+  - [Workspace](workspace.md)
+  - [Cluster](cluster.md)
+  - [Pipeline](pipeline.md)
+  - [Setting Alerts for Pipeline](alerts.md)
