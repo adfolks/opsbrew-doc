@@ -6,3 +6,4 @@
   - [Cluster](cluster.md)
   - [Pipeline](pipeline.md)
   - [Setting Alerts for Pipeline](alerts.md)
+  - [Roles and Privileges](roles.md)
