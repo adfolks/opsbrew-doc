@@ -14,7 +14,7 @@ On clicking `+ Add workspace` you will get 'create your workspace' window. Give 
 
 Give the workspace name and select one cloud provider and click `Connect Workspace`.
 
-### Azure workspace
+## Azure workspace
 
 If you select Azure, you must give app id, subscription id, password and tenant id in appropriate fields as shown below.
 
@@ -22,7 +22,7 @@ If you select Azure, you must give app id, subscription id, password and tenant 
 
 After completing all the fields click `Create workspace`.
 
-### Custom workspace 
+## Custom workspace 
 
 If you select the second custom provider, you will get the following window. 
 
@@ -30,7 +30,7 @@ If you select the second custom provider, you will get the following window.
 
 Give workspace name and click `Create Workspace`. If you select custom provider, you will have to provide a kubeconfig file during cluster creation. 
 
-### Aws workspace
+## Aws workspace
 
 Once you select AWS as the cloud provider, it takes you to the fields as shown below. Access key and secret key should be given in the appropriate fields. 
 
