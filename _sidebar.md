@@ -1,5 +1,6 @@
 - [**Getting started**](/)
 
+  - [Quick start](quickstart.md)
   - [Sign up](sign_up.md)
   - [Organizatiom](organization.md)
   - [Workspace](workspace.md)
@@ -7,3 +8,4 @@
   - [Pipeline](pipeline.md)
   - [Setting Alerts for Pipeline](alerts.md)
   - [Roles and Privileges](roles.md)
+  - [Creating Azure Service Principal](serviceprincipal.md)

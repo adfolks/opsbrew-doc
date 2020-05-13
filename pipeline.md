@@ -12,9 +12,9 @@ After pipeline creation you will get a window as shown below.
 
 ![adding pipeline](_assets/37pipeline.png)
 
-### Import and Export pipeline template 
+## Import and Export pipeline template 
 
-#### Import 
+### Import 
 
 There is an import button provided on the top right of the screen when you enter first time. On clicking ‘import’ button you will get the following window.
 
@@ -22,9 +22,9 @@ There is an import button provided on the top right of the screen when you enter
 
 You can choose a template and click ‘import’ then you can add an already existing pipeline. so that configurations from other pipelines can be reused so as to avoid starting from scratch during each additional pipeline creation. If there are any plugins in the canvas, you won’t be able to import
 
-#### Export 
+### Export 
 
-After pipeline creation, you can see ‘Export’ button on the top right; On clicking it you can download the pipeline and can reuse. 
+After pipeline creation, you can see `Export` button on the top right. On clicking it you can download the pipeline and can reuse it. 
 
 From left side bar you will get sources, connector, and alert by clicking ‘+’ along with these, you can drag and drop these plugins to the canvas. 
 
@@ -124,7 +124,7 @@ Alert conditions can be entered in the window.
 
 ### Test config 
 
-After configuring all plugin click ‘Test config’ then it shows the following pop up then click ‘Render’. 
+After configuring all plugin click `Test config` then it shows the following pop up then click `Render`. 
 
 ![adding pipeline](_assets/53pipeline.png)
 
