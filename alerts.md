@@ -12,7 +12,7 @@ Write the condition from the drop down and give threshold value. For sending ale
 
 If you select email from the drop down, user name and password of sender should be specified and give email address of receiver in `to` field amd then add an appropriate tag. After completing all the fields, click `Create Alerts`.
 
-![alert](_assets/65email-alerts.png)
+![alert](_assets/65email-alert.png)
 
 ## Alert notification by slack 
 
