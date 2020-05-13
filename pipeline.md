@@ -18,6 +18,8 @@ After pipeline creation you will get a window as shown below.
 
 There is an import button provided on the top right of the screen when you enter first time. On clicking ‘import’ button you will get the following window.
 
+![adding pipeline](_assets/import.png)
+
 You can choose a template and click ‘import’ then you can add an already existing pipeline. so that configurations from other pipelines can be reused so as to avoid starting from scratch during each additional pipeline creation. If there are any plugins in the canvas, you won’t be able to import
 
 #### Export 

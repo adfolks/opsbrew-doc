@@ -12,13 +12,13 @@ Write the condition from the drop down and give threshold value. For sending ale
 
 If you select email from the drop down, user name and password of sender should be specified and give email address of receiver in `to` field amd then add an appropriate tag. After completing all the fields, click `Create Alerts`.
 
-![alert](_assets/email-alerts37.png)
+![alert](_assets/65email-alerts.png)
 
 ## Alert notification by slack 
 
 For sending alert notification in slack , select `slack` from the  plugin drop down. For adding webhooks URL , click the link `incoming Webhooks in slack`. Add an appropriate tag.
 
-![alert](_assets/slack-alert38.png)
+![alert](_assets/66slack-alert.png)
 
 After completing all the fields click `Create Alert`.
 
