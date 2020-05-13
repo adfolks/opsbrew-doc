@@ -1,23 +1,34 @@
 ## Create cluster
-Once you create a workspace, it will take you to the cluster dashboard window. On Clicking ‘+Add cluster’ you get a window as below. Give cluster name and select region and nodes from drop down list. Also select node count and Write cluster description then click create cluster. In case if more than one workspace was created, please select one among them before creating new cluster. 
+Once you create a workspace, it will take you to the cluster dashboard window as shown below.
 
-![adding cluster](_assets/create-cluster17.png)
+![adding cluster](_assets/28create-cluster.png)
 
-Once cluster created you can see it in cluster dashboard. It shows only clusters corresponding to selected organization and workspace. For showing clusters of your other organization and workspace you should select organization from sliding window along with profile picture and workspace from the side bar on the left. 
+If you select azure as a cloud provider, on clicking `+Add cluster` you will get a window as below. Give cluster name and select region and nodes from drop down list. Also choose node count using seek bar and Write cluster description then click create cluster. In case if more than one workspace was created, please select one among them before creating new cluster. 
 
-![cluster details](_assets/add-cluster18.png)
+![cluster details](_assets/29create-cluster.png)
 
-The status of cluster you can see in the board. If cluster creation is failed, we can inspect the reason behind this by clicking on `cluster creation failed`.
+If you choose custom provider while creating workspace, you will get a window as below. Give cluster name and browse your kubeconfig file then click create cluster.
+
+![cluster details](_assets/30create-cluster.png)
+
+Once a cluster is added/created you can see it in cluster dashboard. It shows only clusters corresponding to selected organization and workspace. For showing clusters of your other organization and workspace you should select organization from sliding window along with profile picture. 
+
+![cluster details](_assets/31cluster-dashboard.png)
+
+The status of cluster you can see in the board. Cluster creation will take 10 to 15 minutes. When cluster creation completes it shows `cluster running`. If cluster creation is failed, we can inspect the reason behind this by clicking on the `cluster creation failed`.  
 
 ## Delete cluster
 
-Once you click settings button on the right top of the board, then the following screen appears, and you can delete the cluster here. Once cluster created there is no option for further editing. You can see the team details in the next tab. 
+Once you click settings button on the top right of the board, then the following screen appears, and you can delete the cluster here. Cluster can be deleted by the owner of cluster and the users added into the cluster with admin access.
 
-![delete cluster](_assets/delete-cluster19.png)
+![delete cluster](_assets/32delete-cluster.png)
 
-## Update cluster
+## Update user and team details in cluster 
 
-Once you click settings button on the right top of the board, then the following screen appears. On clicking ‘Team details’ you will get a window as shown below. Here you can add users and teams into your cluster by selecting them from the fields. 
+Once cluster created there is no option for further editing in cluster details. Only can add users and teams into the cluster. Once you click settings button on the top right of the board, then the following screen appears. On clicking `User details` tab you will get a window as below. Here you can add users into your cluster by selecting users from the fields. The role of the user can be edited from drop down and click `Update` button. 
 
-![update cluster](_assets/update-cluster20.png)
+![update cluster](_assets/33update-user-cluster.png)
 
+On clicking `Team details` you will get the following window. You can add team from your workspace into your cluster by selecting team and clicking `Add Teams`. Role of the team can be edited here.
+
+![update cluster](_assets/34update-team-cluster.png)
