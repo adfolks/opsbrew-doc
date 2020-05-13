@@ -1,6 +1,6 @@
 - [**Getting started**](/)
 
-  - [Getting started](getting_started.md)
+  - [Sign up](sign_up.md)
   - [Organizatiom](organization.md)
   - [Workspace](workspace.md)
   - [Cluster](cluster.md)
