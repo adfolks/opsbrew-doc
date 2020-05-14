@@ -26,15 +26,17 @@ You can choose a template and click ‘import’ then you can add an already exi
 
 After pipeline creation, you can see `Export` button on the top right. On clicking it you can download the pipeline and can reuse it. 
 
+## Connecting plugins 
+
 From left side bar you will get sources, connector, and alert by clicking ‘+’ along with these, you can drag and drop these plugins to the canvas. 
 
 ![adding pipeline](_assets/38pipeline.png)
 
-You can connect each plugin with lines as shown above. For drawing lines between plugins click on the output of the source plugin and then click on the input of the connector without dragging. Repeat the same for connecting the connector with the next component. Each link and plugin should be configured before building pipeline. 
+You can connect each plugin with lines as shown above. For drawing lines between plugins click on the output of the source plugin and then click on the input of the connector without dragging. Repeat the same for connecting the connector with the next component. Each link and plugin should be configured before building pipeline. The link which is not configured is shown in grey color. If the plugin has only one output, configuration of link is done automatically and link color turns into blue. 
 
 ## Configure Link
 
-For configuring and deleting link, bring cursor on the link and click on it when link becomes dark then you will get a window as shown below. 
+If you connect a plugin having more than one output, link doesn’t configure automatically. For configuring and deleting link, bring cursor on the link and click on it when link becomes dark then you will get a window as shown below. 
 
 ![adding pipeline](_assets/39pipeline.png)
 
@@ -46,7 +48,9 @@ From the drop down you can select the appropriate type of output from linux  and
 
 ![adding pipeline](_assets/41pipeline.png)
 
-Complete all the  fields and click ‘save’. For each plugin connection parameters are different and give the proper values while configuring link. 
+Complete all the  fields and click `save`. For each plugin connection parameters are different and give the proper values while configuring link. If you configured all the connecting links, all links turn to blue as shown below. 
+
+![adding pipeline](_assets/41-1pipeline.png)
 
 ## Configure source Plugin 
 
@@ -68,9 +72,9 @@ On clicking edit, you will get a window as shown below where in the configuratio
 
 ![adding pipeline](_assets/44pipeline.png)
 
-### Get ports 
+### Get IP
 
-On clicking get ports, you will get a window as shown below. 
+On clicking `Get IP`, you will get a window as shown below. 
 
 ![adding pipeline](_assets/45pipeline.png)
 
