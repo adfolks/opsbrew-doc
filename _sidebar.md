@@ -2,7 +2,7 @@
 
   - [Quick start](quickstart.md)
   - [Sign up](sign_up.md)
-  - [Organizatiom](organization.md)
+  - [Organization](organization.md)
   - [Workspace](workspace.md)
   - [Cluster](cluster.md)
   - [Pipeline](pipeline.md)

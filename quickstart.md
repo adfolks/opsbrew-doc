@@ -45,7 +45,7 @@ On clicking `+ Add workspace` you will get 'create your workspace' window. Give 
 ![create details](_assets/20create-workspace.png)
 
 
-Give the workspace name and select one cloud provider and click `Connect Workspace`.
+Give the workspace name and select one cloud provider and click `Create Workspace`.
 
 ### Azure workspace
 

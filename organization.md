@@ -20,7 +20,7 @@ Enter card details and click `Next` then the following window will appear. Selec
 
 ## Delete Organization
 
-You can see your organization details by clicking persona icon on the top right corner. On clicking there, you will get a window as below.  
+You can see your organization details by clicking the profile picture on the top right corner. On clicking there, you will get a window as below.  
 
 ![user details](_assets/7delete-organization.png)
 
