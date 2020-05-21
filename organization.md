@@ -1,3 +1,5 @@
+# Organization
+
 Organization is the top most level of the hierarchy. You have to create an organization to continue on the signup process. 
 
 ## Create Organization
@@ -60,7 +62,15 @@ Click the invitation link in the email, which will take you to the sign-up page.
 
 If you added more users in your organization, you could see all of them in user management window as follows. For deleting a user click `delete` button.  
 
-![invite user](_assets/13delete-user.png)
+![delete user](_assets/13delete-user.png)
+
+Update user 
+
+ 
+
+If you want to change the role of the user in your organization, select the role from the drop down as shown below and click `Update` button. 
+
+![update user](_assets/13update-user.png)
 
 ## Team
 
@@ -92,6 +102,6 @@ On clicking `Delete` button, you can remove the team from your organization.
 
 ### Update team 
 
-For updating a team, click manage button along with the team name then you will get a window as shown below. You can change team name and If you want to add or remove members to your team, there is an option provided for selecting members then click `Update`.
+For updating a team, click manage button along with the team name then you will get a window as shown below. You can change team name and team description from the first tab. If you want to add or remove members to your team, click user details tab. There is an option provided for selecting members then click `Add users`.
 
 ![update team](_assets//18update-team.png)

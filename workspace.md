@@ -1,3 +1,4 @@
+# Workspace
 
 Workspace is an isolated space specific to a cloud provider or a custom provider and needs to be created after organization creation in order to access further features. Each workspace you create will be connected to a specific cloud environment.
 

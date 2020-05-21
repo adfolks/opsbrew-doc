@@ -1,3 +1,5 @@
+# Pipeline
+
 ## Create Pipeline
 
 You can create pipeline by clicking `Pipeline` in the cluster dashboard or from pipeline icon from left side bar. Once you click, then the following screen will appear. 

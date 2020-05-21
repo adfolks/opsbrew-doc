@@ -1,3 +1,5 @@
+# Setting alerts for pipeline
+
 You can define rules to enable capturing information about a running pipeline. You can enable an alert for any rule to be notified when the specified condition occurs. For setting alerts click on the three dots on the right top of  each chart. Then click `+ Add alert`.
 
 ![alert](_assets/63setting-alert.png)
