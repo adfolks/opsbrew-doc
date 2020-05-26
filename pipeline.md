@@ -38,7 +38,7 @@ You can connect each plugin with lines as shown above. For drawing lines between
 
 ## Configure Link
 
-If you connect a plugin having more than one output, link doesn’t configure automatically. For configuring and deleting link, bring cursor on the link and click on it when link becomes dark then you will get a window as shown below. 
+If you connect a plugin having more than one output, link doesn’t configure automatically. For configuring and deleting link, bring cursor on the link and click on it when mouse pointer becomes arrow then you will get a window as shown below. 
 
 ![adding pipeline](_assets/39pipeline.png)
 
@@ -146,7 +146,7 @@ An eye icon provided in the window for monitoring.
 
 You can see ‘Monitor’ button on the right top after build a pipeline. You can go to the monitor dashboard from eye icon provided on pipeline dashboard. clicking monitor button you get a window as below. 
 
-![monitor pipeline](_assets/55monitoring.png)
+![monitor pipeline](_assets/54monitoring.png)
 
 For viewing charts, click ‘+ Pipeline dashboard’ then you get the following window then click ‘+Add chart’. 
 

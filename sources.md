@@ -12,15 +12,9 @@ We have 2 supported methods to configure Linux sources.
 
 `Beats` 
 
- 
-
 ### Syslog 
 
- 
-
 This input will send log messages to log collector in syslog format. This plugin combines a TCP/UDP listener on port 514 and listens for RCF3164-compliant events. Log collector can read syslog messages using the syslog source plugin and forward them to any number of output destinations. 
-
- 
 
 Configuration parameters: 
 
@@ -212,6 +206,7 @@ Your json key.
 
 The prefix of your log file. 
 
+![source](_assets/gcs.png)
 
 ## 10) AWS cloud watch 
 
@@ -374,3 +369,233 @@ The security token for your Salesforce instance.
 The object name for the data from your sdfc app. 
 
 ![source](_assets/salesforce.png)
+
+## 17) Apigee 
+
+Apigee supports logs to be send as syslog messages to a syslog server.  
+
+Apigee log source can be configured with method syslog to send logs to log collector 
+
+Configuration parameters: 
+
+`port.no:` 
+
+The port that the log collector should listen on. 
+
+![source](_assets/apigee.png) 
+
+## 18) Microsoft SQL 
+
+The jdbc source plugin can be used to fetch the logs from Microsoft SQL. 
+
+Configuration parameters: 
+
+`jdbc_driver_library:` 
+
+The path to library. For example: (/root/sqljdbc_4.2/enu/jre8/sqljdbc42.jar) 
+
+`jdbc_driver_class:`  
+
+Driver.class. For example: (com.microsoft.sqlserver.jdbc.SQLServerDriver) 
+
+`jdbc_connection_string: ` 
+
+Connection.string. For example: (jdbc:sqlserver://server1:1433;databaseName=db1;integratedSecurity=false;) 
+
+`jdbc_user: `
+
+User name. 
+
+`jdbc_password: `
+
+Password. 
+
+![source](_assets/microsoft-sql.png) 
+
+## 19) Forcepoint 
+
+Forcepoint logs can be fetched using the tcp source plugin with the codec cef and type as syslog. 
+
+Configuration parameters: 
+
+`port.no:`  
+
+The port that the log collector should listen on. 
+
+![source](_assets/forcepoint.png)
+
+## 20) Kaspersky 
+
+### Syslog 
+
+This input will send machine messages to log collector. This plugin combines a TCP/UDP listener on port 514 and listens for RCF3164-compliant events. Log collector can read syslog messages using the syslog source plugin and forward them to any number of output destinations. 
+
+Configuration parameters: 
+
+`port.no:  `
+
+The port log collector should listen on. 
+
+`codec.format: `
+
+The codec used for input data. Input codecs are a convenient method for decoding your data before it enters the input, without  needing a separate filter in your Log collector pipeline. Commonly used formats are ‘Plain’ , ‘json’ and ‘cef’. 
+
+![source](_assets/kaspersky.png) 
+
+## 21) Nexpose 
+
+### Beats 
+
+The Elastic Beats family which are light data collectors include a number of shippers for all kinds of data (logs, metrics, events, etc.). The different beats, such as Filebeat and Metricbeat, act as lightweight shippers that collect different types of data and subsequently ship it into log collector for more advanced processing. 
+
+Using Beats components in log collector is very simple. Beats events are listened on port “5044” by default and you can change that by editing the port number. 
+
+Configuration parameters: 
+
+`port.no:  `
+
+The port that the log collector should listen on. 
+
+![source](_assets/nexpose.png)
+
+## 22) EMC & HP 
+
+### Syslog 
+
+This input will send machine messages to log collector. This plugin combines a TCP/UDP listener on port 514 and listens for RCF3164-compliant events. Log collector can read syslog messages using the syslog source plugin and forward them to any number of output destinations. 
+
+Configuration parameters: 
+
+`port.no:`  
+
+The port log collector should listen on. 
+
+`codec.format:` 
+
+The codec used for input data. Input codecs are a convenient method for decoding your data before it enters the input, without  needing a separate filter in your Log collector pipeline. Commonly used formats are ‘Plain’ , ‘json’ and ‘cef’. 
+
+![source](_assets/emc-hp.png)
+
+## 23) Vmware 
+ 
+Vmware logs can be fetched using the udp source plugin with type as syslog. 
+
+Configuration parameters: 
+
+`port.no:`  
+
+The port that the log collector should listen on. 
+
+![source](_assets/vmware.png)
+
+## 24) Jboss web server 
+
+### Beats 
+
+The Elastic Beats family  which are light data collectors include a number of shippers for all kinds of data (logs, metrics, events, etc.). The different beats, such as Filebeat and Metricbeat, act as lightweight shippers that collect different types of data and subsequently ship it into log collector for more advanced processing. 
+
+Using Beats components in log collector is very simple. Beats events are listened on port “5044” by default and you can change that by editing the port number. 
+
+Configuration parameters: 
+
+`port.no:`  
+
+The port that the log collector should listen on. 
+
+![source](_assets/jboss-web-server.png)
+
+## 25) Apache webserver 
+
+### Beats 
+
+The Elastic Beats family  which are light data collectors include a number of shippers for all kinds of data (logs, metrics, events, etc.). The different beats, such as Filebeat and Metricbeat, act as lightweight shippers that collect different types of data and subsequently ship it into log collector for more advanced processing. 
+
+Using Beats components in log collector is very simple. Beats events are listened on port “5044” by default and you can change that by editing the port number. 
+
+Configuration parameters: 
+
+`port.no:`  
+
+The port that the log collector should listen on. 
+
+![source](_assets/apache-web-server.png)
+
+## 26) IIS 
+
+### Beats 
+
+The Elastic Beats family  which are light data collectors include a number of shippers for all kinds of data (logs, metrics, events, etc.). The different beats, such as Filebeat and Metricbeat, act as lightweight shippers that collect different types of data and subsequently ship it into log collector for more advanced processing. 
+
+Using Beats components in log collector is very simple. Beats events are listened on port “5044” by default and you can change that by editing the port number. 
+
+Configuration parameters: 
+
+`port.no:`  
+
+The port that the log collector should listen on. 
+
+![source](_assets/iis.png)
+
+## 27) Fortinet Firewall 
+
+Fortinet Firewall logs can be fetched with the tcp source plugin using the codec cef and type as syslog. 
+
+Configuration parameters: 
+
+`port.no:`  
+
+The port that the log collector should listen on. 
+
+![source](_assets/fortinet.png)
+
+## 28) Cisco Router 
+
+Cisco Router logs can be fetched using the udp source plugin with type as syslog-cisco. 
+
+Configuration parameters: 
+
+`port.no:`  
+
+The port that the log collector should listen on. 
+
+![source](_assets/cisco-router.png)
+
+## 29) Cisco WC 
+
+Cisco WC logs can be fetched with the tcp source plugin using the codec cef and type as syslog. 
+
+Configuration parameters: 
+
+`port.no:`  
+
+The port that the log collector should listen on. 
+
+![source](_assets/cisco-wc.png)
+
+## 30) Cisco Switch 
+
+Cisco Switch logs can be fetched using the udp source plugin with type as syslog-cisco. 
+
+Configuration parameters: 
+
+`port.no:`  
+
+The port that the log collector should listen on. 
+
+![source](_assets/cisco-switch.png)
+
+## 31) A10 network device 
+
+### Beats 
+
+The Elastic Beats family  which are light data collectors include a number of shippers for all kinds of data (logs, metrics, events, etc.). The different beats, such as Filebeat and Metricbeat, act as lightweight shippers that collect different types of data and subsequently ship it into log collector for more advanced processing. 
+
+Using Beats components in log collector is very simple. Beats events are listened on port “5044” by default and you can change that by editing the port number. 
+
+Configuration parameters: 
+
+`port.no:`  
+
+The port that the log collector should listen on. 
+
+![source](_assets/a10-network-device.png)
