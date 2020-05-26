@@ -1,3 +1,5 @@
+# Creating Azure Service Principal
+
 A Service Principal is an application within Azure Active Directory whose authentication tokens can be used as the client_id, client_secret, and tenant_id fields needed by Ops_brew(subscription_id can be independently recovered from your Azure account details). 
 
 It's possible to complete this task in either the Azure CLI or in the Azure Portal - in both we'll create a Service Principal which has Contributor rights to the subscription. It's also possible to assign other rights depending on your configuration. 

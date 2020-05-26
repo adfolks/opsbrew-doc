@@ -1,3 +1,5 @@
+# Cluster
+
 ## Create cluster
 Once you create a workspace, it will take you to the cluster dashboard window as shown below.
 

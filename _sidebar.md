@@ -9,3 +9,7 @@
   - [Setting Alerts for Pipeline](alerts.md)
   - [Roles and Privileges](roles.md)
   - [Creating Azure Service Principal](serviceprincipal.md)
+
+- [**Plugins**](/)
+  
+  - [Sources](sources.md)
