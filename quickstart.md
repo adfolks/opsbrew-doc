@@ -12,7 +12,7 @@ Give a username and valid email address then select country and give valid phone
 
 ## Organization
 
-Organization is the topmost level of the hierarchy. You have to create an organization to continue on the signup process.  
+Organization is the topmost level of the hierarchy. You have to create an organization to continue on the signup process.  
 
 ### Create Organization
 
