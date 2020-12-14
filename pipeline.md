@@ -1,164 +1,167 @@
 # Pipeline
+Create pipelines, this is where you are going to build the pipeline that suit your needs. We support combination of disparate environments such as AWS and Azure, etc. sources or destination for a given pipeline. 
 
 ## Create Pipeline
 
-You can create pipeline by clicking `Pipeline` in the cluster dashboard or from pipeline icon from left side bar. Once you click, then the following screen will appear. 
+You can create pipeline by clicking `Pipeline` icon provided in the left side bar. On clicking `+ Add Pipeline` you will get Add pipeline window. Select landscape from drop down and give pipeline name. You can add users into your pipeline by selecting users from drop down then enter pipeline description. After completing all the fields click “Create pipeline”. 
 
-![create pipeline](_assets/35create-pipeline.png)
-
-On clicking `+ Add Pipeline` you will get the following window. Give pipeline name and select cluster from drop down. You can add users and teams into your pipeline by selecting them. After completing all the fields click `create pipeline`. 
-
-![adding pipeline](_assets/36add-pipeline.png)
+![create pipeline](_assets/Newfolder/create_pipeline.png)
 
 After pipeline creation you will get a window as shown below. 
 
+
 ![adding pipeline](_assets/37pipeline.png)
+
+You can create your pipeline in this window. Environments, Sources and Destinations are provided in the left side bar. Select components from these according to your requirements. Also, a search bar is provided for quick search.  
+
+## Connecting plugins 
+
+From left side bar you will get plugins and can drag and drop these plugins to the canvas. You can connect sources and destination from combination of environments with lines. For drawing lines between plugins click on the output of the source plugin and then click on the input of the Opsbrew edge without dragging. Repeat the same for connecting Opsbrew edge with the next component. Each link should be configured before building pipeline.  If the plugin has only one output type, configuration of link is done automatically and link color turns into blue. If you connect a plugin having more than one output, link doesn’t configure automatically, and is shown in grey color. 
+
+## Deleting Plugins
+
+For deleting a plugin which is added in the canvas, click on the plugin and it takes you to configure plugin window as shown below. Then click on `Delete`button. 
+
+![plugin delete](_assets/Newfolder/plugin_delete.png)
+
+## Configure Link 
+
+For configuring link, bring cursor on the link and click on it when mouse pointer becomes hand cursor and link becomes darker. If you click on the link from source to Opsbrew edge, then you will get a window as shown below.
+
+![configure link](_assets/Newfolder/configure_link.png)
+
+In this example we are configuring Linux’s output link. Once you click on `Configure Linux output`, it takes you to the following window.
+
+![configure link](_assets/Newfolder/configure_link2.png)
+
+From the drop down you can select the appropriate type of output from Linux and click `update` button. Once you configure link, connection parameters will appear in the configure link page as follows.
+
+![configure link](_assets/Newfolder/configure_link3.png)
+
+For each plugin connection parameters are different and give the proper values. In most of the cases we provide default connection parameters. Before building pipeline, all the parameters should be filled out. 
+
+## Build pipeline 
+
+If you configured all the connecting links, all links turn into blue as shown below. 
+![build pipeline](_assets/Newfolder/build_pipeline.png)
+
+On clicking ‘Test config’ it will show the following pop up then click ‘Render’. 
+
+![rendering pipeline](_assets/Newfolder/rendering.png)
+
+After rendering a build button appear on the top right of the window then click ‘Build’ button.
+
+## Configure  Opsbrew Edge
+
+On clicking top of the Opsbrew Edge in the canvas, you will get the following window 
+
+![configuring edge](_assets/Newfolder/configuring_edge.png)
+
+### Edit 
+On clicking edit, you will get a window as shown below where in the configurations can be edited in json format. 
+
+![configuring edge](_assets/Newfolder/edit.png)
+
+### SSL 
+
+On clicking SSL, it takes you to the following window. SSL is used is to keep sensitive information sent across the Internet encrypted so that only the intended recipient can access it. Give all details of SSL and click `Save` button. 
+
+![configuring edge](_assets/Newfolder/ssl.png)
+
+### Get IP 
+
+On clicking ‘Get IP’, you will get a window as shown below. 
+
+![configuring edge](_assets/Newfolder/get_ip.png)
+
+You can view IP address as well as the ports from this window. You may have to use this IP address to configure the sources for sending logs to our Opsbrew edge. 
+
+### Build logs 
+
+On clicking build logs, you will get a window as shown below. It shows the successful as well as failed stages during pipeline build. 
+
+![configuring edge](_assets/Newfolder/build_logs.png)
+
+### Pod logs 
+If you want to see application logs, click on pod logs then you will get the following screen 
+
+![configuring edge](_assets/Newfolder/pod_logs.png)
+
+On clicking ‘logs’ on the top right, you will get the real time logs for the applications.
+
+### Replace Data
+
+On clicking “Replace Data” you will get the following window. The mutate filter allows you to perform general mutations on fields. You can rename, remove, replace, and modify fields in your events.
+
+![configuring edge](_assets/Newfolder/replace_data.png)
+
+
+### Enrich Data 
+
+On clicking `Enrich Data` you will get the following window. Enable Geo IP Enrichment switch. 
+
+![configuring edge](_assets/Newfolder/log_enrichment.png)
+
+### PII scrubber
+
+From configure plugin, select `PII Scrubber`. It takes you to the following window. 
+
+
+![configuring edge](_assets/Newfolder/PII_scrubber.png)
+
+### Alerts 
+
+Click on `Alert` button in the configure plugin window then click on “Add Alert” button and you will get the following window.
+
+![configuring edge](_assets/Newfolder/alerts1.png)
+
+Select an appropriate alert type from the list. If you select slack, you will get the following window. Then fill out all fields. 
+
+![configuring edge](_assets/Newfolder/alerts2.png)
+
+Alert conditions can be set according to your requirements as shown below. 
+
+![configuring edge](_assets/Newfolder/alerts3.png)
+
+### Monitoring 
+
+Monitoring is available for your pipeline and components. 
+
+#### Log Analytics Dashboard  
+
+On clicking `monitoring` button you will get the following window. 
+
+![configuring edge](_assets/Newfolder/monitoring1.png
+)
+
+First graph shows log flow. The path of the logs from sources to destinations can be easily understood from the graph. On hovering at the bright vertical lines of each log type, the path will become brighter. When bringing cursor to each component, the number of logs from sources to destinations are displayed. 
+
+The second graph is host wise log analytics; you will get the log count for each host. A filter option is given on the top right for filtering hosts. You can set the time duration from the drop down which will appear after selecting the host name and you will get log count of the given host. You can also see host wise liveness status as shown below. The hosts which are sending logs will be shown with green light rest will be shown with red light. 
+
+![configuring edge](_assets/Newfolder/monitoring2.png
+)
+#### Health Dashboard 
+
+On clicking `Health dashboard` on the top right, you will get a window then click `+Add chart`. Once you click `+ Add chart` it takes you to the following widow. 
+
+![configuring edge](_assets/Newfolder/monitoring3.png
+)
+
+Modules can be selected from the drop down. You can alternate between charts for cpu, network and memory. If you want to see all the charts together add more charts and select appropriate ones from the drop down. 
+
+![configuring edge](_assets/Newfolder/monitoring4.png
+)
 
 ## Import and Export pipeline template 
 
 ### Import 
-
-There is an import button provided on the top right of the screen when you enter first time. On clicking ‘import’ button you will get the following window.
-
-![adding pipeline](_assets/import.png)
-
-You can choose a template and click ‘import’ then you can add an already existing pipeline. so that configurations from other pipelines can be reused so as to avoid starting from scratch during each additional pipeline creation. If there are any plugins in the canvas, you won’t be able to import
+ 
+There is an import button provided on the top right of the screen when you enter to pipeline page first time. You can choose a template and click ‘import’ then you can add an already existing pipeline. so that  other pipelines can be reused so as to avoid starting from scratch during each additional pipeline creation. If there are any plugins in the canvas, you won’t be able to import pipeline. 
 
 ### Export 
 
 After pipeline creation, you can see `Export` button on the top right. On clicking it you can download the pipeline and can reuse it. 
 
-## Connecting plugins 
-
-From left side bar you will get sources, connector, and alert by clicking ‘+’ along with these, you can drag and drop these plugins to the canvas. 
-
-![adding pipeline](_assets/38pipeline.png)
-
-You can connect each plugin with lines as shown above. For drawing lines between plugins click on the output of the source plugin and then click on the input of the connector without dragging. Repeat the same for connecting the connector with the next component. Each link and plugin should be configured before building pipeline. The link which is not configured is shown in grey color. If the plugin has only one output, configuration of link is done automatically and link color turns into blue. 
-
-## Configure Link
-
-If you connect a plugin having more than one output, link doesn’t configure automatically. For configuring and deleting link, bring cursor on the link and click on it when mouse pointer becomes arrow then you will get a window as shown below. 
-
-![adding pipeline](_assets/39pipeline.png)
-
-In this example we are configuring linux output link. Once you click on ‘configure linux output’, it takes you to the following window.  
-
-![adding pipeline](_assets/40pipeline.png)
-
-From the drop down you can select the appropriate type of output from linux  and click ‘update’ button and on clicking ‘connection parameters’ you will get the following window. 
-
-![adding pipeline](_assets/41pipeline.png)
-
-Complete all the  fields and click `save`. For each plugin connection parameters are different and give the proper values while configuring link. If you configured all the connecting links, all links turn to blue as shown below. 
-
-![adding pipeline](_assets/41-1pipeline.png)
-
-## Configure source Plugin 
-
-For configuring each source plugin, click on the top of the plugin name then you will get the following window. 
-
-![adding pipeline](_assets/42pipeline.png)
-
-You can delete the source plugin. 
-
-## Configure Connector Plugin 
-
-On clicking the top of the log connector plugin in the canvas you will get the following window 
-
-![adding pipeline](_assets/43pipeline.png)
-
-### Edit 
-
-On clicking edit, you will get a window as shown below where in the configurations can be edited in json format. 
-
-![adding pipeline](_assets/44pipeline.png)
-
-### Get IP
-
-On clicking `Get IP`, you will get a window as shown below. 
-
-![adding pipeline](_assets/45pipeline.png)
-
-You can view IP address as well as the ports from this window. You may have to use this IP address to configure the sources for sending logs to our log collector. 
-
-### Build logs 
-
-On clicking build logs, you will get a window as shown below. It shows the successful as well as failed stages during log collector build. 
-
-![adding pipeline](_assets/46pipeline.png)
-
-### Pod logs 
-
-If you want to see application logs, click on pod logs then you will get the following screen 
-
-![adding pipeline](_assets/47pipeline.png)
-
-On clicking ‘logs’ on the top right, you will get the following window which shows the real time logs for the applications 
-
-![adding pipeline](_assets/48pipeline.png)
-
-### Mutate 
-
-The mutate filter allows you to perform general mutations on fields. You can rename, remove, replace, and modify fields in your events. 
-
-![adding pipeline](_assets/49pipeline.png)
-
-## Configure destination plugin 
-
-### Filter  
-
-A filter plugin performs intermediary processing on a log. Filters are often applied conditionally depending on the characteristics of the log. During configuring output plugin, you can see filter button, on clicking it takes you to the following window. From the dropdown, you can select an appropriate condition for filtering. 
-
-![adding pipeline](_assets/50pipeline.png)
-
-### Life cycle 
-
-Life cycle is used for setting retention period for logs by categorizing them based on keywords. On clicking life cycle, you will get the following window. 
-
-![adding pipeline](_assets/51pipeline.png)
-
-In this example, S3 is used as destination. Complete all the fields and click `Apply Lifecycle`.
-
-## Configure alert plugin 
-
-If you add alert plugins like email, slack, PagerDuty etc.in your pipeline, you can see an alert button while configuring. On clicking alert button, you will get the following window 
-
-![adding pipeline](_assets/52pipeline.png)
-
-Alert conditions can be entered in the window. 
-
-### Test config 
-
-After configuring all plugin click `Test config` then it shows the following pop up then click `Render`. 
-
-![adding pipeline](_assets/53pipeline.png)
-
-After rendering a build button appear on the top right of the window then click `Build` button. After pipeline creation, you can see ‘Export’ button on the top right; On clicking it you can download the pipeline and reuse.  
-
-Once you create pipeline, you can see it in pipeline dashboard as shown below. you can click build console for building your pipeline. A filtering option provided at right hand side for a quick search. For adding more pipelines click `+ Add Pipeline`. Pipeline dashboard shows only pipelines corresponding to selected organization and workspace. 
-
-![adding pipeline](_assets/54pipeline.png)
-
-An eye icon provided in the window for monitoring. 
-
-## Monitoring 
-
-You can see ‘Monitor’ button on the right top after build a pipeline. You can go to the monitor dashboard from eye icon provided on pipeline dashboard. clicking monitor button you get a window as below. 
-
-![monitor pipeline](_assets/54monitoring.png)
-
-For viewing charts, click ‘+ Pipeline dashboard’ then you get the following window then click ‘+Add chart’. 
-
-![monitor pipeline](_assets/56monitoring.png)
-
-Once you click ‘+ Add chart’, it takes you to the following widow. 
-
-![monitor pipeline](_assets/57monitoring.png)
-
-Modules can be  selected from the drop down. Then click ‘Add chart’. You can alternate between charts for cpu, network and memory. If you want see all the charts together add more charts and select appropriate ones from the drop down. 
-
-![monitor pipeline](_assets/58monitoring.png)
 
 ## Discover plugin 
 
@@ -166,21 +169,21 @@ You can also see discover plugins on the bottom of left side bar. Once you click
 
 ![plugin](_assets/59discover-plugin.png)
 
-## Update user and team details in pipeline 
+## Manage Pipeline  
 
-For updating pipeline, click `+` icon corresponding to a pipeline in the pipeline dashboard then you can see edit button. Once you click edit button it takes you to the following window. On clicking `user details` you get a window as below. 
+Once you create pipeline, you can see it in pipeline dashboard as shown below. 
 
-![update pipeline](_assets/60update-user-pipeline.png)
+![manage pipeline](_assets/Newfolder/manage_pipeline1.png)
 
-For adding users to your pipeline, select users then click `Add user`. On clicking `Team details` you get a window as below. Here you can add teams by selecting team from the field. 
 
-![edit team and user](_assets/61update-team-pipeline.png)
+For adding more pipelines click `+ Add Pipeline`. Pipeline dashboard shows all the pipelines of selected organization. There is a filter provided on the top for listing pipelines under selected landscape. 
 
-## Delete pipeline 
+For updating pipeline, click ‘+’ icon corresponding to each pipeline in the pipeline dashboard then you can see edit button. Once you click edit button it takes you to the following window. If you want to delete a pipeline, click `basic information` tab then you can see delete button and click on it.
 
-When you click edit button from pipeline dashboard, you will get a window as below.
+![manage pipeline](_assets/Newfolder/manage_pipeline2.png)
 
-![delete pipeline](_assets/62delete-pipeline.png)
+You can also edit pipeline name here. After editing click on “Update pipeline”. 
+On clicking ‘user details’ tab you will get a window as below.  
 
-If you want to delete a pipeline, click `basic information tab` then you can see delete button.
+![manage pipeline](_assets/Newfolder/manage_pipeline3.png)
 
