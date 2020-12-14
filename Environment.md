@@ -24,7 +24,7 @@ If you choose custom cloud provider, then the following window will appear and y
  
 Once environment is added/created, you can see it in the environments page. It shows all environments which you created.  For showing environments of a specific landscape, you could select landscape from the filter given in the top of the page.
 
-![environment details](_assets/Newfolder/environment_details.png)
+![environment details](_assets/Newfolder/Environments.png)
 
 The status of environment you can see in the board. When environment creation completes it shows ‘Environment running’. This confirms that the environment is ready to use.  
 
