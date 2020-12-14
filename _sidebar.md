@@ -3,11 +3,10 @@
   - [Quick start](quickstart.md)
   - [Sign up](sign_up.md)
   - [Organization](organization.md)
-  - [Workspace](workspace.md)
-  - [Cluster](cluster.md)
+  - [Landscape](Landscape.md)
+  - [Environment](Environment.md)
   - [Pipeline](pipeline.md)
   - [Setting Alerts for Pipeline](alerts.md)
-  - [Roles and Privileges](roles.md)
   - [Creating Azure Service Principal](serviceprincipal.md)
 
 - [**Plugins**](/)
