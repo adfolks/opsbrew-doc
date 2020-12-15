@@ -8,7 +8,7 @@ Once you create an organization, you will get the following window.
 
 ![create landscape1](_assets/Newfolder/create_landscape1.png)
 
-On clicking “+Add Landscape” you will get the following window. Give a proper name and tag then click “Create Landscape”. 
+On clicking `+Add Landscape` you will get the following window. Give a proper name and tag then click `Create Landscape`. 
 
 ![create landscape2](_assets/Newfolder/create_landscape2.png)
 

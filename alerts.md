@@ -38,10 +38,10 @@ For sending alert notification through teams, select teams from the plugin drop 
 
 ## Update and delete Alert  
 
-You can see alert list by clicking on the alert button from left side bar and can delete and update the alert rule here. On clicking ‘Alert’ you will get the following window. 
+You can see alert list by clicking on the alert button from left side bar and can delete and update the alert rule here. On clicking `Alert` you will get the following window. 
 
 ![alert](_assets/69update-alert.png)
 
-On clicking ‘update’ button you will get the following window. you can update matrics, condition, threshold and integrate tools. 
+On clicking `update`’` button you will get the following window. you can update matrics, condition, threshold and integrate tools. 
 
 ![alert](_assets/70update-alert.png)

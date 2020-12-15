@@ -1,6 +1,5 @@
 - [**Getting started**](/)
 
-  - [Quick start](quickstart.md)
   - [Sign up](sign_up.md)
   - [Organization](organization.md)
   - [Landscape](Landscape.md)
@@ -9,6 +8,6 @@
   - [Setting Alerts for Pipeline](alerts.md)
   - [Creating Azure Service Principal](serviceprincipal.md)
 
-- [**Plugins**](/)
+- [**Plugins**](sources.md)
   
   - [Sources](sources.md)
