@@ -3,7 +3,7 @@ Create pipelines, this is where you are going to build the pipeline that suit yo
 
 ## Create Pipeline
 
-You can create pipeline by clicking `Pipeline` icon provided in the left side bar. On clicking `+ Add Pipeline` you will get Add pipeline window. Select landscape from drop down and give pipeline name. You can add users into your pipeline by selecting users from drop down then enter pipeline description. After completing all the fields click “Create pipeline”. 
+You can create pipeline by clicking `Pipeline` icon provided in the left side bar. On clicking `+ Add Pipeline` you will get Add pipeline window. Select landscape from drop down and give pipeline name. You can add users into your pipeline by selecting users from drop down then enter pipeline description. After completing all the fields click `Create pipeline`. 
 
 ![create pipeline](_assets/Newfolder/create_pipeline.png)
 
@@ -43,6 +43,7 @@ For each plugin connection parameters are different and give the proper values. 
 ## Build pipeline 
 
 If you configured all the connecting links, all links turn into blue as shown below. 
+
 ![build pipeline](_assets/Newfolder/build_pipeline.png)
 
 On clicking ‘Test config’ it will show the following pop up then click ‘Render’. 
@@ -58,6 +59,7 @@ On clicking top of the Opsbrew Edge in the canvas, you will get the following wi
 ![configuring edge](_assets/Newfolder/configuring_edge.png)
 
 ### Edit 
+
 On clicking edit, you will get a window as shown below where in the configurations can be edited in json format. 
 
 ![configuring edge](_assets/Newfolder/edit.png)
@@ -82,7 +84,8 @@ On clicking build logs, you will get a window as shown below. It shows the succe
 
 ![configuring edge](_assets/Newfolder/build_logs.png)
 
-### Pod logs 
+### Pod logs
+
 If you want to see application logs, click on pod logs then you will get the following screen 
 
 ![configuring edge](_assets/Newfolder/pod_logs.png)
@@ -91,7 +94,7 @@ On clicking ‘logs’ on the top right, you will get the real time logs for the
 
 ### Replace Data
 
-On clicking “Replace Data” you will get the following window. The mutate filter allows you to perform general mutations on fields. You can rename, remove, replace, and modify fields in your events.
+On clicking `Replace Data` you will get the following window. The mutate filter allows you to perform general mutations on fields. You can rename, remove, replace, and modify fields in your events.
 
 ![configuring edge](_assets/Newfolder/replace_data.png)
 
@@ -111,7 +114,7 @@ From configure plugin, select `PII Scrubber`. It takes you to the following wind
 
 ### Alerts 
 
-Click on `Alert` button in the configure plugin window then click on “Add Alert” button and you will get the following window.
+Click on `Alert` button in the configure plugin window then click on `Add Alert` button and you will get the following window.
 
 ![configuring edge](_assets/Newfolder/alerts1.png)
 
@@ -142,7 +145,7 @@ The second graph is host wise log analytics; you will get the log count for each
 )
 #### Health Dashboard 
 
-On clicking `Health dashboard` on the top right, you will get a window then click `+Add chart`. Once you click `+ Add chart` it takes you to the following widow. 
+On clicking `Health dashboard` on the top right, you will get a window then click `+Add chart`. Once you click `+ Add chart` it takes you to the following window. 
 
 ![configuring edge](_assets/Newfolder/monitoring3.png
 )
@@ -156,7 +159,7 @@ Modules can be selected from the drop down. You can alternate between charts for
 
 ### Import 
  
-There is an import button provided on the top right of the screen when you enter to pipeline page first time. You can choose a template and click ‘import’ then you can add an already existing pipeline. so that  other pipelines can be reused so as to avoid starting from scratch during each additional pipeline creation. If there are any plugins in the canvas, you won’t be able to import pipeline. 
+There is an `import` button provided on the top right of the screen when you enter to pipeline page first time. You can choose a template and click `import` then you can add an already existing pipeline. so that  other pipelines can be reused so as to avoid starting from scratch during each additional pipeline creation. If there are any plugins in the canvas, you won’t be able to import pipeline. 
 
 ### Export 
 
@@ -165,7 +168,7 @@ After pipeline creation, you can see `Export` button on the top right. On clicki
 
 ## Discover plugin 
 
-You can also see discover plugins on the bottom of left side bar. Once you click on the “discover plugin” it will show you more details of each plugin as shown below. 
+You can also see discover plugins on the bottom of left side bar. Once you click on the `discover plugin` it will show you more details of each plugin as shown below. 
 
 ![plugin](_assets/59discover-plugin.png)
 
@@ -182,8 +185,9 @@ For updating pipeline, click ‘+’ icon corresponding to each pipeline in the 
 
 ![manage pipeline](_assets/Newfolder/manage_pipeline2.png)
 
-You can also edit pipeline name here. After editing click on “Update pipeline”. 
-On clicking ‘user details’ tab you will get a window as below.  
+You can also edit pipeline name here. After editing click on `Update pipeline`. 
+
+On clicking `user details` tab you will get a window as below.  
 
 ![manage pipeline](_assets/Newfolder/manage_pipeline3.png)
 
