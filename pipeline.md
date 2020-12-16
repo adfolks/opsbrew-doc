@@ -22,7 +22,7 @@ From left side bar you will get plugins and can drag and drop these plugins to t
 
 For deleting a plugin which is added in the canvas, click on the plugin and it takes you to configure plugin window as shown below. Then click on `Delete`button. 
 
-![plugin delete](_assets/Newfolder/plugin_delete.png)
+![plugin delete](_assets/Newfolder/Plugin_delete.png)
 
 ## Configure Link 
 
@@ -62,7 +62,7 @@ On clicking top of the Opsbrew Edge in the canvas, you will get the following wi
 
 On clicking edit, you will get a window as shown below where in the configurations can be edited in json format. 
 
-![configuring edge](_assets/Newfolder/edit.png)
+![configuring edge](_assets/Newfolder/Edit.png)
 
 ### SSL 
 
@@ -96,7 +96,7 @@ On clicking ‘logs’ on the top right, you will get the real time logs for the
 
 On clicking `Replace Data` you will get the following window. The mutate filter allows you to perform general mutations on fields. You can rename, remove, replace, and modify fields in your events.
 
-![configuring edge](_assets/Newfolder/replace_data.png)
+![configuring edge](_assets/Newfolder/Replace_data.png)
 
 
 ### Enrich Data 
@@ -107,10 +107,10 @@ On clicking `Enrich Data` you will get the following window. Enable Geo IP Enric
 
 ### PII scrubber
 
-From configure plugin, select `PII Scrubber`. It takes you to the following window. 
+Mask PII data without spending time working with regular expressions.From configure plugin, select `PII Scrubber`. It takes you to the following window. 
 
 
-![configuring edge](_assets/Newfolder/PII_scrubber.png)
+![configuring edge](_assets/Newfolder/pii_scrubber.png)
 
 ### Alerts 
 
