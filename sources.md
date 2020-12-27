@@ -26,7 +26,7 @@ The port log collector should listen on.
 
 The codec used for input data. Input codecs are a convenient method for decoding your data before it enters the input, without needing a separate filter in your Log collector pipeline. Commonly used formats are ‘plain’ , ‘json’, ‘json_lines’ and ‘cef’. 
 
-![source](_assets/linux-syslog.png)
+
 
 ### Beats 
 
@@ -40,7 +40,7 @@ Configuration parameters:
 
 The port log collector should listen on. 
 
-![source](_assets/linux-beats.png)
+
 
 ## 2) Windows 
 
@@ -54,7 +54,7 @@ Configuration parameters:
 
 The port that the log collector should listen on. 
 
-![source](_assets/windows.png) 
+
 
 ## 3) CISCO CMX 
 
@@ -72,7 +72,6 @@ The port log collector should listen on.
 
 The codec used for input data.  
 
-![source](_assets/cisco-cmx.png)`
 
  ## 4) Aruba ALE 
 
@@ -92,7 +91,7 @@ The port log collector should listen on.
 
 The codec used for input data.  
 
-![source](_assets/aruba-ale.png)
+
 
 ## 5) Switches 
 
@@ -112,7 +111,7 @@ The port log collector should listen on.
 
 The codec used for input data.  
 
-![source](_assets/switches.png)
+
 
 ## 6) Routers 
 
@@ -132,7 +131,7 @@ The port log collector should listen on.
 
 The codec used for input data.  
 
-![source](_assets/router.png)
+
 
 ## 7) S3 bucket 
 
@@ -164,7 +163,7 @@ Your AWS secret key.
 
 If specified, the prefix of filenames in the bucket must match (not a regexp). 
 
-![source](_assets/s3.png)
+
 
 ## 8) Blob 
 
@@ -184,7 +183,7 @@ Your access key id.
 
 The name of your container. 
 
-![source](_assets/blob.png)
+
 
 ## 9) Google cloud storage 
 
@@ -206,7 +205,7 @@ Your json key.
 
 The prefix of your log file. 
 
-![source](_assets/gcs.png)
+
 
 ## 10) AWS cloud watch 
 
@@ -228,7 +227,7 @@ The name of the group you want to filter. For example:
 
 `filters => { "tag:Group" => "Production" }` 
 
-![source](_assets/aws-cloudwatch.png)
+
 
 ## 11) AWS cloudtrail 
 
@@ -252,7 +251,7 @@ Your AWS access key.
 
 Your AWS secret key. 
 
-![source](_assets/aws-cloudtrail.png)
+
 
 ## 12) AWS VPC flow 
 
@@ -276,7 +275,7 @@ Your AWS access key.
 
 Your AWS secret key. 
 
-![source](_assets/aws-vpc-flow.png)
+
 
 ## 13) Azure network flow 
 
@@ -296,7 +295,7 @@ Your access key id.
 
 The name of your container. 
 
-![source](_assets/blob.png)
+
 
 ## 14) Azure activity log 
 
@@ -316,7 +315,7 @@ The consumer group name.
 
 The storage connection used. 
 
-![source](_assets/azure-eventshub.png)
+
 
 ## 15) Kafka 
 
@@ -336,7 +335,7 @@ The name of the topic.
 
 The group id used. 
 
-![source](_assets/kafka.png)
+
 
 ## 16) Salesforce
 
@@ -368,7 +367,7 @@ The security token for your Salesforce instance.
 
 The object name for the data from your sdfc app. 
 
-![source](_assets/salesforce.png)
+
 
 ## 17) Apigee 
 
@@ -382,7 +381,7 @@ Configuration parameters:
 
 The port that the log collector should listen on. 
 
-![source](_assets/apigee.png) 
+
 
 ## 18) Microsoft SQL 
 
@@ -410,7 +409,7 @@ User name.
 
 Password. 
 
-![source](_assets/microsoft-sql.png) 
+
 
 ## 19) Forcepoint 
 
@@ -422,7 +421,7 @@ Configuration parameters:
 
 The port that the log collector should listen on. 
 
-![source](_assets/forcepoint.png)
+
 
 ## 20) Kaspersky 
 
@@ -440,7 +439,7 @@ The port log collector should listen on.
 
 The codec used for input data. Input codecs are a convenient method for decoding your data before it enters the input, without  needing a separate filter in your Log collector pipeline. Commonly used formats are ‘Plain’ , ‘json’ and ‘cef’. 
 
-![source](_assets/kaspersky.png) 
+
 
 ## 21) Nexpose 
 
@@ -456,7 +455,7 @@ Configuration parameters:
 
 The port that the log collector should listen on. 
 
-![source](_assets/nexpose.png)
+
 
 ## 22) EMC & HP 
 
@@ -474,7 +473,7 @@ The port log collector should listen on.
 
 The codec used for input data. Input codecs are a convenient method for decoding your data before it enters the input, without  needing a separate filter in your Log collector pipeline. Commonly used formats are ‘Plain’ , ‘json’ and ‘cef’. 
 
-![source](_assets/emc-hp.png)
+
 
 ## 23) Vmware 
  
@@ -486,7 +485,7 @@ Configuration parameters:
 
 The port that the log collector should listen on. 
 
-![source](_assets/vmware.png)
+
 
 ## 24) Jboss web server 
 
@@ -502,7 +501,7 @@ Configuration parameters:
 
 The port that the log collector should listen on. 
 
-![source](_assets/jboss-web-server.png)
+
 
 ## 25) Apache webserver 
 
@@ -518,7 +517,7 @@ Configuration parameters:
 
 The port that the log collector should listen on. 
 
-![source](_assets/apache-web-server.png)
+
 
 ## 26) IIS 
 
@@ -534,7 +533,7 @@ Configuration parameters:
 
 The port that the log collector should listen on. 
 
-![source](_assets/iis.png)
+
 
 ## 27) Fortinet Firewall 
 
@@ -546,7 +545,7 @@ Configuration parameters:
 
 The port that the log collector should listen on. 
 
-![source](_assets/fortinet.png)
+
 
 ## 28) Cisco Router 
 
@@ -558,7 +557,7 @@ Configuration parameters:
 
 The port that the log collector should listen on. 
 
-![source](_assets/cisco-router.png)
+
 
 ## 29) Cisco WC 
 
@@ -570,7 +569,7 @@ Configuration parameters:
 
 The port that the log collector should listen on. 
 
-![source](_assets/cisco-wc.png)
+
 
 ## 30) Cisco Switch 
 
@@ -582,7 +581,7 @@ Configuration parameters:
 
 The port that the log collector should listen on. 
 
-![source](_assets/cisco-switch.png)
+
 
 ## 31) A10 network device 
 
@@ -598,4 +597,3 @@ Configuration parameters:
 
 The port that the log collector should listen on. 
 
-![source](_assets/a10-network-device.png)

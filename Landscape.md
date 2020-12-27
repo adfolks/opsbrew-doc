@@ -4,21 +4,25 @@ Landscape is a logical grouping of environments.
 
 ## Create Landscape 
 
-Once you create an organization, you will get the following window. 
 
-![create landscape1](_assets/Newfolder/create_landscape1.png)
-
-On clicking `+Add Landscape` you will get the following window. Give a proper name and tag then click `Create Landscape`. 
-
-![create landscape2](_assets/Newfolder/create_landscape2.png)
+Once you successfully created an organization, it takes you to the crate landscape window.  
+- Click  `+ Add Landscape` .
+- Enter a proper name and tag 
+- Click on `Create Landscape`. 
 
 ## Manage Landscape 
 
-Once you create a landscape, it will be shown in landscape page as follows. 
+Once you create a landscape, it will be shown in landscape page.
 
-![manage landcape](_assets/Newfolder/manage_landscape1.png)
+- Click on settings button provided on the top right of each landscape card. 
+- On the resulting edit landscape page you can edit landscape name and tag name.
+- Click on `Update Landscape`.
+- If you want to delete landscape click on `Delete Landscape`. 
 
-Click on settings button provided on the top right of each landscape card. On the resulting edit landscape page you can edit landscape name and tag name. If you want to delete landscape click on `Delete Landscape`. 
+You can add users from your organization in to your landscape.
+- Click on User details tab
+- Select users from drop down
+- Give proper role to the user
+- click `Add user`.
 
-![manage landscape](_assets/Newfolder/manage_landscape2.png)
 
