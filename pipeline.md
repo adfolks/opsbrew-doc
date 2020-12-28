@@ -31,9 +31,10 @@ Each link should be configured before building pipeline.  If the plugin has only
 ## Configure Link 
 
 - Bring cursor on the link and click on it when mouse pointer becomes hand cursor and link becomes darker.
-- If you click on the link from source to Opsbrew edge
-- From the drop down you can select the appropriate type of output.
+- Click on the connecting links.
+- Select the appropriate type of output From the drop down.
 - Click `update` button. 
+- For deleting link, click `Delete` button.
 
 Once you configure link, connection parameters will appear in the configure link page. For each plugin connection parameters are different and give the proper values. In most of the cases we provide default connection parameters. Before building pipeline, all the parameters should be filled out. 
 
@@ -114,6 +115,24 @@ The second graph is host wise log analytics; you will get the log count for each
 - Modules can be selected from the drop down. You can alternate between charts for cpu, network and memory.
 
 If you want to see all the charts together, add more charts and select appropriate ones from the drop down. 
+
+## Configure Destination Plugin
+
+### Filter  
+
+A filter plugin performs intermediary processing on a log. Filters are often applied conditionally depending on the characteristics of the log. 
+- Click on destination plugin
+- Click on the `Filter` in the configure plugin window
+- Select an appropriate condition for filtering
+- click `Save`
+
+### Life cycle 
+
+Life cycle is used for setting retention period for logs by categorizing them based on keywords.
+- Click on destination plugin
+- Click `Life Cycle`
+- Complete all the fields as your requirement.
+- CLick `Apply Lifecycle`
 
 
 ## Import and Export pipeline template 

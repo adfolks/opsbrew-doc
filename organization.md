@@ -36,7 +36,7 @@ You can see your organization details by clicking profile picture icon on the to
 - Click  `Users`, it takes you to the user management window. 
 - Click `+ Add User`, it takes you to the invite user window.
 
- You can invite a user into your organization by entering email ID and role. The role of the user can be decided by the owner of the organization. Choose one among the two roles from drop down. 
+You can invite a user into your organization by entering email ID and role. The role of the user can be decided by the owner of the organization. Choose one among the two roles from drop down. 
 1. Admin (Access to read, write and delete.) 
 2. Member(Read only access) 
 

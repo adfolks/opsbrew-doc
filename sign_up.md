@@ -11,6 +11,6 @@ Users who do not have an Opsbrew application account can select `sign up` to get
 - Enter username and valid email address
 - Select country and give valid phone number. 
 - Set a password and confirm it.
-- click ‘sign up’. 
+- click `sign up`. 
 
 For activating the account, you must verify your email. After email verification, you can sign in.  
