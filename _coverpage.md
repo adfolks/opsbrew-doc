@@ -6,7 +6,7 @@
 
 <!-- # **Opsbrew <small> </small>**  -->
 
-> Build Log Ingestion pipeline for modern security teams
+> A solution designed to add value to your organization and your logs
 
 
 <!-- Offload your platform engineering workloads for data brewing (Ingestion, Transformation, Actions). -->

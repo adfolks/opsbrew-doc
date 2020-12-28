@@ -20,7 +20,7 @@ Once you create a landscape, it will be shown in landscape page.
 - If you want to delete landscape click on `Delete Landscape`. 
 
 You can add users from your organization in to your landscape.
-- Click on User details tab
+- Click on `User details` tab
 - Select users from drop down
 - Give proper role to the user
 - click `Add user`.
